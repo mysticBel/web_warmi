@@ -1,0 +1,67 @@
+---
+import Button from '../components/Button.astro'
+---
+
+<section class="home">
+    <div class="home-text">
+        <h2>
+            Impulsamos los <span class="title-home-bold">emprendimientos exponenciales</span> de mujeres en Latinoamérica
+        </h2>
+        <p>
+            Sé parte de una generación que inspire a más mujeres a ser <span class="description-bold">líderes</span> y <span class="description-bold">founders</span> de proyectos innovadores
+        </p>
+        <Button textButton = 'Conoce más'/> 
+    </div>
+
+    
+</section>
+<style>
+    
+    .home{
+        background: url('../assets/warmi-home.jpg') no-repeat center center;
+        background-size: cover;
+        height: 100vh;
+        position: relative;
+        display: flex;
+        align-items: flex-end;
+        text-align: left;
+    }
+    .home::after {
+        content: "";
+        position: absolute;
+        top: 50%; /* Inicia el sombreado desde la mitad */
+        left: 0;
+        width: 100%;
+        height: 50%; /* Cubre la mitad inferior */
+        background: linear-gradient(
+            90deg, 
+            rgba(208,75,196,0.7) 0%,  /* Rosa con transparencia */
+            rgba(74,50,136,0.3) 100%  /* Morado con más transparencia al final */
+        ); /* Sombreado degradado de rosa a morado con transparencia */
+        z-index: 1; /* Coloca la capa sobre la imagen */
+    }
+
+    
+    .home h2{
+        color: #fff;
+        text-align: left;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+    .home p{
+        color: #fff;
+        font-size: 1.2rem;
+    }
+    .title-home-bold{
+        color: #F85FBF;
+    }
+    .home-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        z-index: 2;
+        padding: 3rem;
+        width: 70%;
+    }
+</style>
+
