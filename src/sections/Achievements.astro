@@ -1,0 +1,42 @@
+---
+
+import CardLogros from "../components/CardLogros.astro";
+---
+<section class="our-achievements">
+    <h2>Nuestros <span class="logros-text">logros</span></h2>
+    <p class="description">Nuestras cifras convertidas en impacto social  con un mismo propósito</p>
+    <ul class="cards-logros">
+        <CardLogros number='+50' text='mentores'/>
+        <CardLogros number='+50' text='mentores'/>
+        <CardLogros number='+50' text='mentores'/>
+        <CardLogros number='+50' text='mentores'/>
+    </ul>
+</section>
+<style>
+    .our-achievements{
+        background: rgb(208,75,196);
+        background: linear-gradient(90deg, rgba(208,75,196,1) 0%, rgba(74,50,136,1) 100%);
+        padding: 50px 100px;
+        margin: 0;
+    }
+    .cards-logros{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 30px;
+    }
+    .our-achievements h2{
+        color: #fff;
+        
+    }
+    .logros-text{
+        color: #01FABE;
+    }
+    .our-achievements p{
+        color: #fff;
+        font-size: 1.2rem;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+</style>
