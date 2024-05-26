@@ -1,0 +1,86 @@
+---
+const title = "Sobre Warmi Ventures";
+const text = "We are a business incubator dedicated to providing support programs for  female entrepreneurs, who technically and commercially , validate their business ideas, connect with inversion,as well as rapidly growing their skills and value propositions for a successful market launch.";
+const ods5 = "/src/assets/ods5.png";
+const ods8 = "/src/assets/ods8.png";
+const ods9 = "/src/assets/ods9.png";
+const ods17 = "/src/assets/ods17.png";
+const women = "/src/assets/aboutUsWomen.png";
+
+
+---
+<section class="aboutUs">
+    <div class="container-text">
+        <h2>Sobre<br><span>Warmi Ventures</span></h2>
+        <p>{text}</p>
+    </div>
+    <div class="container-image">
+        <img src = {ods5} alt = "ods5">
+        <img src = {ods8} alt = "ods8">
+        <img src = {ods9} alt = "ods9">
+        <img src = {ods17} alt = "ods17">
+        
+    </div>
+    <div class="women-image">
+        <img src={women} alt="women">
+    </div>
+</section>
+<style>
+    .aboutUs{
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+        padding-bottom: 6rem;
+        padding-top: 6rem;
+    }
+    .container-text{
+        width: 100%;
+        flex-direction: row;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+    }
+    .container-text h2{
+        color: #333;
+    }
+    .container-text span{
+        color: var(--purple-warmi);
+    }
+    .container-text p{
+        color: #333;
+        font-size: 1.2rem;
+        width: 80%;
+    }
+    .container-image{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 1rem;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        align-content: center;
+        margin: 5rem;
+        width: 50%;
+        
+    }
+    .container-image img{
+        width: 80%;
+        height: auto;
+    }
+    .women-image{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+    }
+    .women-image img{
+        width: 90%;
+        height: auto;
+        
+    }
+
+</style>
