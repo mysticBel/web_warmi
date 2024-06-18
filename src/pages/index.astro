@@ -8,11 +8,19 @@ import CardLogros from '../components/CardLogros.astro';
 import '../styles/global.css';
 //import sections
 import Achievements from '../sections/Achievements.astro';
+import Home from '../sections/Home.astro';
+import AboutUs from '../sections/AboutUs.astro';
+import Mision from '../sections/mision.astro';
+import How from '../sections/how.astro';
+import Why from '../sections/why.astro';
+import BannerFemale from '../sections/banner-female.astro';
+import Participants from '../sections/Participants.astro';
+
 ---
 
 <Layout title="Warmi Ventures">
     <Header client:only="react"/>
-	<main class="container">
+	<!-- <main class="container">
 	  <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-[7rem] lg:pt-5 text-center lg:text-left max-w-[1024px] mx-auto">
   		<div class="flex flex-col lg:flex lg:flex-row items-center relative z-0">
   		  <div>
@@ -31,12 +39,16 @@ import Achievements from '../sections/Achievements.astro';
 	  		<img class="hidden lg:block"  src="images/image-hero-desktop.png" alt="Hero">
   		</div>
 		</div>
-	</main>
+	</main> -->
+	<Home/>
 	<Achievements />
 	<AboutUs/>
 	<Mision/>
+
 	<How/>
-	<Why/>
 	<BannerFemale/>
+	<Why/>
+
 	<Participants/>
+
 </Layout>
