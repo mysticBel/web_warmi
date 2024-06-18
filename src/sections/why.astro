@@ -1,0 +1,40 @@
+---
+
+import CardWhy from "../components/CardWhy.astro";
+---
+<section class="container-why">
+    <h2>¿Por qué <span class="alter-h2-why"> ser parte?</span></h2>
+    <ul class="cards-why">
+        <CardWhy subtitle='Demo day' text='Aprenderás a exponer tu idea de negocio y propuesta de valor frente a terceros. Saber comunicar tu idea te acercará más a una potencial inversión.'/>
+        <CardWhy subtitle='Networking' text='Vas a ser parte de una comunidad de emprendedoras como vos, que quiere hacer realidad su idea de emprendimiento.'/>
+        <CardWhy subtitle='Acompañamiento ' text='Tenemos un equipo disponible que te ayuda a resolver tus dudas y solicitar ayuda en cualquier momento de tu experiencia.'/>
+        <CardWhy subtitle='Mentorías personalizadas' text='Sesiones individuales con mentores experimentados del mismo sector que la idea de negocio.'/>
+    </ul>
+</section>
+
+<style>
+    .container-why{
+        background: rgb(255, 255, 255);
+        padding: 100px 0px;
+        margin: 0;
+    }
+    .cards-why{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+   
+    .alter-h2-why{
+        color: #D75BCC;
+    }
+    /* .our-mision p{
+        color: #fff;
+        font-size: 1.2rem;
+        text-align: center;
+        padding-bottom: 10px;
+       
+    } */
+
+</style>

@@ -1,0 +1,63 @@
+---
+import Button from '../components/Button.astro'
+---
+
+<section class="how-section">
+    <div class="container">   
+        <div class="column-left">
+            <h2>¿Cómo lo<br> hacemos <span class="alter-h2">posible?</span></h2>
+            <p class="description">A través de programas que visibilicen el impacto femenino de la región</p>
+            <Button textButton = 'Conoce más'/> 
+        
+        </div>
+    
+        <div class="column-right">
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/aHxHJRlZWWY?si=BT_LET1ySRPAVQrN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .how-section{
+        background: rgb(245,243,255);
+        padding: 100px 100px;
+        margin: 0;
+    }
+
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .column-left{
+        align-items: left;
+    }
+
+    .column-right{
+        margin-top: 50px;
+        width: auto;
+       
+    }
+  
+    .how-section h2{
+        color: #9D9CA0;
+        text-align: left;
+        
+    }
+    .alter-h2{
+        color: #C88EFC;
+        
+    }
+    .how-section p{
+        color: #575757;
+        font-size: 1rem;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+
+</style>
