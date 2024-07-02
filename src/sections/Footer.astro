@@ -9,60 +9,74 @@ const fbIcon = "/src/assets/facebook.png";
 
 <section class="footer">
   <div class="container-footer">
-    <div class="logo-footer">
-      <img src={logoWarmi} alt="logo-warmi" class="size-img" />
-    </div>
-    <div class="contact-footer">
-      <h3 class="titles-footer">Contáctanos</h3>
-      <div class="contact-tel">
-        <div class="container-img-contact-tel">
-          <img src={telIcon} alt="tel" class="size-img" />
-        </div>
-        <p>981325954</p>
+    <div class="container-logo-contact">
+      <div class="logo-footer">
+        <img src={logoWarmi} alt="logo-warmi" class="size-img" />
       </div>
-      <div class="contact-correo">
-        <div class="container-img-contact">
-          <img src={correoIcon} alt="correo" class="size-img" />
+      <div class="contact-footer">
+        <h3 class="titles-footer">Contáctanos</h3>
+        <div class="contact-tel">
+          <div class="container-img-contact-tel">
+            <img src={telIcon} alt="tel" class="size-img" />
+          </div>
+          <p>981325954</p>
         </div>
-        <a href="mailto:warmiventures@gmail.com">warmiventure@gmail.com</a>
-      </div>
-    </div>
-    <div class="social-media">
-      <h3 class="titles-footer">Síguenos</h3>
-      <div class="group-social-media">
-        <div class="container-icon-sm">
-          <img src={linkedinIcon} alt="Linkedin" class="icon-social-media" />
+        <div class="contact-correo">
+          <div class="container-img-contact">
+            <img src={correoIcon} alt="correo" class="size-img" />
+          </div>
+          <a href="mailto:warmiventures@gmail.com">warmiventure@gmail.com</a>
         </div>
-        <a href="https://www.linkedin.com/company/warmi-ventures/about/"
-          >Linkedin</a
-        >
-      </div>
-      <div class="group-social-media">
-        <div class="container-icon-sm">
-          <img src={intgIcon} alt="Instagram" class="icon-social-media" />
-        </div>
-        <a href="#">Instagram</a>
-      </div>
-      <div class="group-social-media">
-        <div class="container-icon-sm">
-          <img src={fbIcon} alt="Facebook" class="icon-social-media" />
-        </div>
-        <a href="#">Facebook</a>
       </div>
     </div>
-    <div class="newsletter">
-      <h3 class="titles-footer title-input">Sé la primera en enterarte</h3>
-      <h3 class="titles-footer">nuestras noticias</h3>
-      <p>Ingresa tu correo electrónico</p>
-      <form class="form">
-        <input
-          type="text"
-          id="input-newslater"
-          placeholder="ejemplo@gmail.com"
-          class="input-newsletter"
-        />
-        <button type="submit" class="btn-newsletter">Enviar</button>
-      </form>
+    <div class="container-social-newsletter">
+      <div class="social-media">
+        <h3 class="titles-footer title-main-sm">Síguenos</h3>
+        <div class="container-icon-sm">
+          <a
+            href="https://www.linkedin.com/company/warmi-ventures/about/"
+            class="item-sm"
+            ><img src={linkedinIcon} alt="Linkedin" class="icon-social-media" />
+            <p class="sm-title">Linkedin</p></a
+          >
+        </div>
+        <div class="container-icon-sm">
+          <a
+            href="https://www.linkedin.com/company/warmi-ventures/about/"
+            class="item-sm"
+            ><img src={intgIcon} alt="Instagram" class="icon-social-media" /><p
+              class="sm-title"
+            >
+              Instagram
+            </p></a
+          >
+        </div>
+        <div class="container-icon-sm">
+          <a
+            href="https://www.linkedin.com/company/warmi-ventures/about/"
+            class="item-sm"
+            ><img src={fbIcon} alt="Facebook" class="icon-social-media" /><p
+              class="sm-title"
+            >
+              Facebook
+            </p></a
+          >
+        </div>
+      </div>
+      <div class="newsletter">
+        <h3 class="titles-footer title-input">Sé la primera en enterarte</h3>
+        <h3 class="titles-footer">nuestras noticias</h3>
+        <p class="parrafo-newsletter">Ingresa tu correo electrónico</p>
+        <form class="form">
+          <input
+            type="text"
+            id="input-newslater"
+            placeholder="ejemplo@gmail.com"
+            class="input-newsletter"
+          />
+          <button type="submit" class="btn-newsletter">Enviar</button>
+        </form>
+      </div>
     </div>
   </div>
 </section>
@@ -78,20 +92,32 @@ const fbIcon = "/src/assets/facebook.png";
     display: flex;
     justify-content: center;
     padding: 90px;
-
-    width: 100%;
   }
 
   .container-footer {
     display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+  }
+
+  .container-logo-contact,
+  .container-social-newsletter {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 33px;
+    align-items: center;
     justify-content: center;
-    gap: 3.5rem;
-    align-items: flex-start;
-    width: 90%;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .logo-footer {
+    width: 250px;
   }
 
   .contact-footer {
     color: #fff;
+    text-align: center;
   }
 
   .titles-footer {
@@ -105,9 +131,14 @@ const fbIcon = "/src/assets/facebook.png";
     padding: 0px;
   }
 
+  .item-sm {
+    display: inline-block;
+    display: flex;
+    gap: 15px;
+  }
+
   .contact-tel,
-  .contact-correo,
-  .group-social-media {
+  .contact-correo {
     display: flex;
     gap: 15px;
     color: #fff;
@@ -119,6 +150,11 @@ const fbIcon = "/src/assets/facebook.png";
     width: 15px;
   }
 
+  .social-media {
+    display: flex;
+    gap: 20px;
+  }
+
   .size-img {
     width: 100%;
   }
@@ -126,21 +162,34 @@ const fbIcon = "/src/assets/facebook.png";
   .icon-social-media {
     width: 100%;
   }
+
+  .title-main-sm {
+    display: none;
+  }
+
+  .sm-title {
+    color: white;
+    display: none;
+  }
   .container-icon-sm {
-    width: 30px;
+    width: 45px;
   }
 
   .newsletter {
     color: #fff;
   }
 
+  .parrafo-newsletter {
+    text-align: left;
+    margin-bottom: 12px;
+  }
   .form {
     display: flex;
     align-items: center;
   }
 
   .input-newsletter {
-    margin-top: 10px;
+    border-radius: 5px;
     padding: 8px;
     width: 250px;
     outline: none;
@@ -173,5 +222,100 @@ const fbIcon = "/src/assets/facebook.png";
   .btn-newsletter:active {
     box-shadow: none;
     transform: translateY(4px);
+  }
+
+  @media (min-width: 768px) {
+    .footer {
+      padding: 90px 50px;
+    }
+
+    .container-footer {
+      flex-direction: row;
+      gap: 2rem;
+    }
+
+    .container-logo-contact,
+    .container-social-newsletter {
+      width: 50%;
+      gap: 70px;
+      text-align: initial;
+      margin-top: 0;
+    }
+
+    .logo-footer {
+      width: 200px;
+    }
+
+    .title-main-sm {
+      display: none;
+    }
+
+    .social-media {
+      display: flex;
+      justify-content: flex-end;
+      width: 85%;
+      gap: 20px;
+      padding: 0 15%;
+    }
+
+    .contact-footer {
+      color: #fff;
+      text-align: initial;
+    }
+
+    .sm-title {
+      display: none;
+    }
+
+    .input-newsletter {
+      width: 200px;
+    }
+
+    .btn-newsletter {
+      width: 74px;
+    }
+
+    .container-icon-sm {
+      width: 50px;
+    }
+  }
+
+  @media (min-width: 1240px) {
+    .container-logo-contact,
+    .container-social-newsletter {
+      flex-direction: row;
+      width: 50%;
+      justify-content: space-around;
+      align-items: start;
+    }
+
+    .logo-footer {
+      width: 250px;
+    }
+
+    .title-main-sm {
+      display: block;
+    }
+
+    .sm-title {
+      display: block;
+    }
+
+    .social-media {
+      display: block;
+
+      width: 100%;
+
+      padding: 0;
+    }
+
+    .container-icon-sm {
+      margin-bottom: 15px;
+      width: 30px;
+    }
+
+    .container-img-contact {
+      flex: none;
+    }
   }
 </style>
