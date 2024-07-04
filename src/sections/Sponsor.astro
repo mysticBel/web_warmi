@@ -1,28 +1,43 @@
 ---
 const sponsors = [
   {
-    imgurl: "https://placehold.co/300x150",
+    imgurl: "/src/assets/sponsor/red-impacto.png",
   },
   {
-    imgurl: "https://placehold.co/300x150",
+    imgurl: "/src/assets/sponsor/kg-apps.png",
   },
   {
-    imgurl: "https://placehold.co/300x150",
+    imgurl: "/src/assets/sponsor/red-nacional-laboratorio-pcm.png",
   },
   {
-    imgurl: "https://placehold.co/300x150",
+    imgurl: "/src/assets/sponsor/parquetec-mexico.jpg",
   },
   {
-    imgurl: "https://placehold.co/300x150",
+    imgurl: "/src/assets/sponsor/impacto-bcp.png",
   },
   {
-    imgurl: "https://placehold.co/300x150",
+    imgurl: "/src/assets/sponsor/hubspot.png",
   },
   {
-    imgurl: "https://placehold.co/300x150",
+    imgurl: "/src/assets/sponsor/asep.png",
   },
   {
-    imgurl: "https://placehold.co/300x150",
+    imgurl: "/src/assets/sponsor/arkangeles.png",
+  },
+  {
+    imgurl: "/src/assets/sponsor/sharecollab.png",
+  },
+  {
+    imgurl: "/src/assets/sponsor/escala.png",
+  },
+  {
+    imgurl: "/src/assets/sponsor/conectores.png",
+  },
+  {
+    imgurl: "/src/assets/sponsor/selina-peru.png",
+  },
+  {
+    imgurl: "/src/assets/sponsor/peru-alumni-ylai.png",
   },
 ];
 ---
@@ -41,50 +56,66 @@ const sponsors = [
   </div>
 </section>
 <style>
-  .section-sponsor {
-    padding: 50px 0;
-  }
   .title {
     margin: 10px;
+    font-size: 28px;
   }
 
   .t-secondary {
     color: #c88efc;
+    font-size: 28px;
   }
   .wrapper {
-    width: 100%;
     /* background-color: antiquewhite; */
     display: flex;
     flex-wrap: wrap;
     gap: 18px;
     margin: 40px auto;
     justify-content: center;
+    width: 90%;
   }
 
   .item-sponsor {
     background-color: aquamarine;
 
     img {
-      height: 80px;
+      height: 100px;
     }
   }
 
   @media (min-width: 768px) {
+    .section-sponsor {
+      padding: 30px 0;
+    }
+
+    .title {
+      font-size: 2.5rem;
+    }
+
+    .t-secondary {
+      font-size: 2.5rem;
+    }
     .wrapper {
-      width: 70%;
-      gap: 25px;
+      width: 90%;
+      gap: 35px;
     }
 
     .item-sponsor {
       img {
-        height: 120px;
+        height: 150px;
       }
     }
   }
 
   @media (min-width: 1240px) {
     .wrapper {
-      width: 60%;
+      max-width: 1300px;
+    }
+
+    .item-sponsor {
+      img {
+        height: 200px;
+      }
     }
   }
 </style>
