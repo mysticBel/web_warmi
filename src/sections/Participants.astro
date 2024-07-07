@@ -1,5 +1,6 @@
 ---
 import Button from '../components/Button.astro'
+import Accordion from '../components/Accordion.astro'
 ---
 
 <section class="how-section">
@@ -8,90 +9,74 @@ import Button from '../components/Button.astro'
             <h2>¿Quieres <br> ayudarnos con <br>  <span class="alter-h2">nuestra causa?</span></h2>
             <p class="description">A través de programas que visibilicen el impacto femenino de la región</p>
             <Button textButton = 'Conoce más'/> 
-        
         </div>
     
         <div class="column-right">
             <div class="video-container">
-                
                 <article class="accordion">
-
                     <section id="module-01">
-                        <header>
-                            <h5> <span class="module-title">Female Founder</h5>
-                        </header>
-                        <div class="accord-content">
-                            <p><span class="module-title-sky"> ¿Deseas ser un aliado de nuestra comunidad ? Puedes inscribirte en este link</p>
-
-                        </div>
+                        <Accordion title='Female Founder'
+                                   content='¿Deseas ser un aliado de nuestra comunidad ? Puedes inscribirte en este '
+                                   link = ""/>
+                                   
                     </section>
-          
                     <section id="module-02">
-                        <header>
-                            <h5> <span class="module-title">Partner</h5>
-                        </header>
-                        <div class="accord-content">
-                            <p><span class="module-title-sky"> ¿Deseas ser un aliado de nuestra comunidad ? Puedes inscribirte en este link</p>
-                        </div>
+                        <Accordion title='Partner'
+                                   content='¿Deseas ser un aliado de nuestra comunidad ? Puedes inscribirte en este '
+                                   link = ""/>
                     </section>
-
                     <section id="module-03">
-                        <header>
-                            <h5> <span class="module-title">Empresas</h5>
-                        </header>
-                        <div class="accord-content">
-                            <p><span class="module-title-sky"> ¿Deseas ser un aliado de nuestra comunidad ? Puedes inscribirte en este link</p>
-                        </div>
+                        <Accordion title='Empresas'
+                                   content='¿Deseas ser un aliado de nuestra comunidad ? Puedes inscribirte en este '
+                                   link = ""/>
                     </section>
-           
-
                 </article>
-                
-
             </div>
         </div>
     </div>
 </section>
 
 <style>
-    .how-section{
-        background: rgb(245,243,255);
+    .how-section {
+        background-color: #fff;
         padding: 100px 100px;
         margin: 0;
+        text-align: left;
     }
 
-    .container{
+    .container {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-evenly;
-        align-items: center;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 3rem;
     }
 
-    .column-left{
-        align-items: left;
+    .column-left {
+        width: 50%;
+        position: sticky;
+        top: 100px;
+        align-self: flex-start;
     }
 
-    .column-right{
+    .column-right {
         margin-top: 50px;
         width: auto;
-       
+        flex: 2;
     }
   
-    .how-section h2{
+    .how-section h2 {
         color: #333333;
         text-align: left;
-        
     }
-    .alter-h2{
-        color: #C88EFC;
-        
-    }
-    .how-section p{
+    
+    .how-section p {
         color: #575757;
         font-size: 1rem;
-        text-align: center;
         padding-bottom: 10px;
     }
 
-
+    .alter-h2 {
+        color: #C88EFC;
+    }
 </style>

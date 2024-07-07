@@ -2,12 +2,13 @@
 interface Props{
     subtitle: string;
     text: string;
+    image: string
 }
-const { subtitle, text }= Astro.props;
+const { subtitle, text, image }= Astro.props;
 ---
 <li class="link-card">
     <div class="card-image">
-        <img src="" alt="" >
+        <img src={image} alt="" >
     </div>
     <div class="card-description">
         <h1>
