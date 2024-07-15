@@ -1,14 +1,24 @@
 ---
 
 import CardWhy from "../components/CardWhy.astro";
+
+
 ---
 <section class="container-why">
     <h2>¿Por qué <span class="alter-h2-why"> ser parte?</span></h2>
     <ul class="cards-why">
-        <CardWhy subtitle='Demo day' text='Aprenderás a exponer tu idea de negocio y propuesta de valor frente a terceros. Saber comunicar tu idea te acercará más a una potencial inversión.'/>
-        <CardWhy subtitle='Networking' text='Vas a ser parte de una comunidad de emprendedoras como vos, que quiere hacer realidad su idea de emprendimiento.'/>
-        <CardWhy subtitle='Acompañamiento ' text='Tenemos un equipo disponible que te ayuda a resolver tus dudas y solicitar ayuda en cualquier momento de tu experiencia.'/>
-        <CardWhy subtitle='Mentorías personalizadas' text='Sesiones individuales con mentores experimentados del mismo sector que la idea de negocio.'/>
+        <CardWhy subtitle='Demo day'
+                 text='Aprenderás a exponer tu idea de negocio y propuesta de valor frente a terceros. Saber comunicar tu idea te acercará más a una potencial inversión.'
+                 image = "../assets/demoday.png"/>
+        <CardWhy subtitle='Networking' 
+                 text='Vas a ser parte de una comunidad de emprendedoras como vos, que quiere hacer realidad su idea de emprendimiento.'
+                 image="../assets/networking.png"/>
+        <CardWhy subtitle='Acompañamiento ' 
+                 text='Tenemos un equipo disponible que te ayuda a resolver tus dudas y solicitar ayuda en cualquier momento de tu experiencia.'
+                 image = "../assets/acompañamiento.png"/>
+        <CardWhy subtitle='Mentorías personalizadas' 
+                 text='Sesiones individuales con mentores experimentados del mismo sector que la idea de negocio.'
+                 image = "../assets/mentoria.png"/>
     </ul>
 </section>
 
