@@ -31,9 +31,10 @@ const Header = () => {
           <div className="hidden lg:flex lg:space-x-10 lg:items-center">
             {/* <div className="hover:text-almost-black cursor-pointer">Login</div> */}
             <div>
-              <button className="border-2 hover:border-almost-black hover:text-almost-black rounded-xl px-4 py-2">
+              {/* <button className="border-2 hover:border-almost-black hover:text-almost-black rounded-xl px-4 py-2">
                 Tengo una idea
-              </button>
+              </button> */}
+              <button  className="button-warmi-header" >Tengo una idea</button>
             </div>
           </div>
         </div>
