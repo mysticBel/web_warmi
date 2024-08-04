@@ -59,4 +59,17 @@ const { href, title, body } = Astro.props;
 	.link-card:is(:hover, :focus-within) h2 {
 		color: rgb(var(--accent-light));
 	}
+
+	/* Responsive styles */
+	@media (max-width: 640px) {
+		.link-card {
+			flex-direction: column;
+		}
+		.link-card > a {
+			padding: 1rem;
+		}
+		h2 {
+			font-size: 1.5rem;
+		}
+	}
 </style>

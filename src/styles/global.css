@@ -42,6 +42,11 @@ h2{
     margin-bottom: 1em;
 
 }
+html{
+    
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
 
 .instructions {
     margin-bottom: 2rem;

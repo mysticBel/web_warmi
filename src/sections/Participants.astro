@@ -3,7 +3,7 @@ import Button from '../components/Button.astro'
 import Accordion from '../components/Accordion.astro'
 ---
 
-<section class="how-section">
+<section class="how-section" id="programs">
     <div class="container">   
         <div class="column-left">
             <h2>¿Quieres <br> ayudarnos con <br>  <span class="alter-h2">nuestra causa?</span></h2>
@@ -54,13 +54,13 @@ import Accordion from '../components/Accordion.astro'
 
     .column-left {
         width: 50%;
-        position: sticky;
-        top: 100px;
+        /* position: sticky; */
+        /* top: 100px; */
         align-self: flex-start;
     }
 
     .column-right {
-        margin-top: 50px;
+        /* margin-top: 50px; */
         width: auto;
         flex: 2;
     }
@@ -78,5 +78,21 @@ import Accordion from '../components/Accordion.astro'
 
     .alter-h2 {
         color: #C88EFC;
+    }
+    /* responsive */
+    @media (max-width: 500px) {
+        .how-section {
+            padding: 2rem 3rem;
+            text-align: left;
+        }
+        .container {
+            flex-direction: column;
+            gap: 20px;
+            text-align: left;
+        }
+        .column-left {
+            width: 100%;
+            text-align: left;
+        }
     }
 </style>

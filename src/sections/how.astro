@@ -31,6 +31,7 @@ import Button from '../components/Button.astro'
         flex-wrap: wrap;
         justify-content: space-evenly;
         align-items: center;
+        gap: 1rem;
     }
 
     .column-left{
@@ -55,9 +56,32 @@ import Button from '../components/Button.astro'
     .how-section p{
         color: #575757;
         font-size: 1rem;
-        text-align: center;
+        text-align: left;
         padding-bottom: 10px;
     }
 
+    /* responsive */
+    @media (max-width: 640px) {
+        .how-section{
+            padding: 2rem 3rem;
+            text-align: left;
+        }
+        .container{
+            flex-direction: column;
+            gap: 20px;
+            text-align: left;
+        }
+        .column-left{
+            width: 100%;
+            text-align: left;
+        }
+        .column-right{
+            width: 100%;
+        }
+        iframe{
+            width: 100%;
+
+        }
+    }
 
 </style>

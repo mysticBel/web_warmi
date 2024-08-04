@@ -63,6 +63,16 @@ const { title, content, link } = Astro.props as Props;
   .expand-icon.open {
     transform: rotate(180deg);
   }
+  
+  /*responsive*/
+  @media (max-width: 640px) {
+    .accordion-header {
+      font-size: 1rem;
+    }
+    .accordion-content {
+      font-size: 0.9rem;
+    }
+  }
 </style>
 <script>
   document.querySelectorAll('.accordion-header').forEach(header => {
