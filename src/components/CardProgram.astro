@@ -1,0 +1,89 @@
+---
+interface Props {
+  title: string;
+  subtitle: string;
+  text: string;
+}
+
+import Button from "../components/Button.astro";
+
+const { title, subtitle, text } = Astro.props;
+---
+
+<li class="link-card">
+  <div class="card-title">
+    <h1>
+      {title}
+    </h1>
+  </div>
+  <div class="card-description">
+    <p class="card-subtitle">
+      {subtitle}
+    </p>
+    <p>
+      {text}
+    </p>
+  </div>
+  <div></div>
+</li>
+
+<style>
+  .link-card {
+    list-style: none;
+    /* display: flex; */
+    padding: 50px;
+    background-color: #e8e0ff;
+    gap: 1rem;
+    border-radius: 1rem;
+  }
+  .card-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    flex-basis: 70%;
+  }
+
+  div {
+    display: flex;
+    /* justify-content: center; */
+    width: 250px;
+  }
+  .card-image {
+    align-items: center;
+    flex-basis: 30%;
+  }
+  img {
+    width: 70px;
+    height: 65px;
+    margin: auto;
+  }
+  h1 {
+    font-size: 1.5rem;
+    color: #7651ee;
+    text-align: left;
+  }
+  p {
+    font-size: 0.9rem;
+    color: #4a3288;
+  }
+  .card-subtitle {
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1.7px solid #4d33a1;
+  }
+
+  /* responsive */
+
+  @media (max-width: 640px) {
+    .link-card {
+      flex-direction: column;
+      padding: 1.5rem;
+    }
+    .card-description {
+      flex-basis: 100%;
+    }
+    .card-image {
+      flex-basis: 100%;
+    }
+  }
+</style>

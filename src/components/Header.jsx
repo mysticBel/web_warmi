@@ -2,6 +2,7 @@ import NavMenu from "./NavMenu.jsx";
 import { useState } from "react";
 import Sidebar from "./Sidebar.jsx";
 
+
 const Header = () => {
   const [open, setOpen] = useState(false);
 
@@ -34,7 +35,10 @@ const Header = () => {
               {/* <button className="border-2 hover:border-almost-black hover:text-almost-black rounded-xl px-4 py-2">
                 Tengo una idea
               </button> */}
+             <a href="https://wa.link/b35suv" target="_blank">
               <button  className="button-warmi-header" >Tengo una idea</button>
+              </a>
+              
             </div>
           </div>
         </div>

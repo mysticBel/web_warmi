@@ -1,81 +1,76 @@
 ---
-interface Props{
-    subtitle: string;
-    text: string;
-    image: string
+interface Props {
+  subtitle: string;
+  text: string;
+  image: string;
 }
-const { subtitle, text, image }= Astro.props;
+const { subtitle, text, image } = Astro.props;
 ---
+
 <li class="link-card">
-    <div class="card-image">
-        <img src={image} alt="" >
-    </div>
-    <div class="card-description">
-        <h1>
-            {subtitle}
-        </h1>
-        <p>
-            {text}
-        </p>
-    </div>
-</li>   
+  <div class="card-image">
+    <img src={image} alt="" />
+  </div>
+  <div class="card-description">
+    <h1>
+      {subtitle}
+    </h1>
+    <p>
+      {text}
+    </p>
+  </div>
+</li>
 <style>
+  .link-card {
+    list-style: none;
+    display: flex;
+    padding: 10px;
+    background-color: rgb(250, 250, 250);
+    gap: 1rem;
+  }
+  .card-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    flex-basis: 70%;
+  }
 
-    .link-card{
-        list-style: none;
-		display: flex;
-        padding: 10px;
-        background-color: rgb(250, 250, 250);
-        gap: 1rem;
-        
-       
-    }
-    .card-description{
-        display: flex;
-        flex-direction: column;
-        justify-content: left;
-        flex-basis: 70%;
-    }
+  div {
+    display: flex;
+    /* justify-content: center; */
+    width: 250px;
+  }
+  .card-image {
+    align-items: center;
+    flex-basis: 30%;
+  }
+  img {
+    width: 70px;
+    height: 65px;
+    margin: auto;
+  }
+  h1 {
+    font-size: 1.5rem;
+    color: #7651ee;
+    text-align: left;
+  }
+  p {
+    font-size: 0.9rem;
+    color: #4a3288;
+  }
 
-    div{
-        display: flex;
-        /* justify-content: center; */     
-        width: 250px;
-        
-    }
-    .card-image{
-        align-items: center;
-        flex-basis: 30%;
-    }
-    img{
-        width: 80px;
-        height: 80px;
-        margin: auto;
-    }
-    h1{
-        font-size: 1.5rem;
-        color: #7651EE;
-        text-align: left;
-    }
-    p{
-        font-size: 0.9rem;
-        color: #4A3288;
-    }
+  /* responsive */
 
-    /* responsive */
-
-    @media (max-width: 640px) {
-        .link-card {
-            flex-direction: column;
-            padding: 1.5rem;
-        }
-        .card-description{
-            flex-basis: 100%;
-        }
-        .card-image{
-            flex-basis: 100%;
-        }
+  @media (max-width: 640px) {
+    .link-card {
+      flex-direction: column;
+      padding: 1.5rem;
     }
-
-
+    .card-description {
+      flex-basis: 100%;
+    }
+    .card-image {
+      flex-basis: 100%;
+    }
+  }
 </style>

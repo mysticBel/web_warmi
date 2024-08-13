@@ -7,25 +7,49 @@ const intgIcon = "/assets/ig.png";
 const fbIcon = "/assets/facebook.png";
 ---
 
-<section class="footer" >
+<section class="footer" id="footer">
   <div class="container-footer">
     <div class="container-logo-contact">
       <div class="logo-footer">
-        <img loading="lazy"  src={logoWarmi} alt="logo-warmi" class="size-img loading="lazy" " />
+        <img
+          loading="lazy"
+          src={logoWarmi}
+          alt="logo-warmi"
+          class="size-img loading="
+          lazy"
+          "
+        />
       </div>
       <div class="contact-footer">
         <h3 class="titles-footer">Contáctanos</h3>
         <div class="contact-tel">
-          <div class="container-img loading="lazy" -contact-tel">
-            <img loading="lazy"  src={telIcon} alt="tel" class="size-img loading="lazy" " />
+          <div class="container-img loading=" lazy" -contact-tel">
+            <img
+              loading="lazy"
+              src={telIcon}
+              alt="tel"
+              class="size-img loading="
+              lazy"
+              "
+            />
           </div>
-          <p>981325954</p>
+          <p><a href="https://wa.link/b35suv" target="_blank">916278153</a></p>
         </div>
         <div class="contact-correo">
-          <div class="container-img loading="lazy" -contact">
-            <img loading="lazy"  src={correoIcon} alt="correo" class="size-img loading="lazy" " />
+          <div class="container-img loading=" lazy" -contact">
+            <img
+              loading="lazy"
+              src={correoIcon}
+              alt="correo"
+              class="size-img loading="
+              lazy"
+              "
+            />
           </div>
-          <a href="mailto:warmiventures@gmail.com">warmiventure@gmail.com</a>
+          <p>
+            <a href="mailto:warmiventures@gmail.com">warmi.ventures@gmail.com</a
+            >
+          </p>
         </div>
       </div>
     </div>
@@ -36,7 +60,12 @@ const fbIcon = "/assets/facebook.png";
           <a
             href="https://www.linkedin.com/company/warmi-ventures/about/"
             class="item-sm"
-            ><img loading="lazy"  src={linkedinIcon} alt="Linkedin" class="icon-social-media" />
+            ><img
+              loading="lazy"
+              src={linkedinIcon}
+              alt="Linkedin"
+              class="icon-social-media"
+            />
             <p class="sm-title">Linkedin</p></a
           >
         </div>
@@ -44,22 +73,24 @@ const fbIcon = "/assets/facebook.png";
           <a
             href="https://www.linkedin.com/company/warmi-ventures/about/"
             class="item-sm"
-            ><img loading="lazy"  src={intgIcon} alt="Instagram" class="icon-social-media" /><p
-              class="sm-title"
-            >
-              Instagram
-            </p></a
+            ><img
+              loading="lazy"
+              src={intgIcon}
+              alt="Instagram"
+              class="icon-social-media"
+            /><p class="sm-title">Instagram</p></a
           >
         </div>
         <div class="container-icon-sm">
           <a
             href="https://www.linkedin.com/company/warmi-ventures/about/"
             class="item-sm"
-            ><img loading="lazy"  src={fbIcon} alt="Facebook" class="icon-social-media" /><p
-              class="sm-title"
-            >
-              Facebook
-            </p></a
+            ><img
+              loading="lazy"
+              src={fbIcon}
+              alt="Facebook"
+              class="icon-social-media"
+            /><p class="sm-title">Facebook</p></a
           >
         </div>
       </div>
@@ -97,7 +128,8 @@ const fbIcon = "/assets/facebook.png";
   .container-footer {
     display: flex;
     flex-direction: column-reverse;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin: 40px auto;
   }
 
   .container-logo-contact,
@@ -140,7 +172,7 @@ const fbIcon = "/assets/facebook.png";
   .contact-tel,
   .contact-correo {
     display: flex;
-    gap: 15px;
+    gap: 20px;
     color: #fff;
     padding: 10px;
     align-items: center;
@@ -155,7 +187,7 @@ const fbIcon = "/assets/facebook.png";
     gap: 20px;
   }
 
-  .size-img loading="lazy"  {
+  .size-img loading="lazy" {
     width: 100%;
   }
 

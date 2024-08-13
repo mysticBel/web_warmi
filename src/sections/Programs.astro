@@ -1,0 +1,64 @@
+---
+import CardProgram from "../components/CardProgram.astro";
+---
+
+<section class="container-program">
+  <h2>Nuestros<span class="alter-h2"> programas</span></h2>
+  <ul class="cards-program">
+    <CardProgram
+      title="PRE-INCUBACIÓN"
+      subtitle="Te ayudaremos a validar la problemática y lanzar tu idea de negocio "
+      text="Buscamos brindar apoyo desde la idea de negocio hasta la validación del problema con la construcción de un Producto Mínimo Viable (MVP)."
+    />
+    <CardProgram
+      title="INCUBACIÓN"
+      subtitle="Te preparamos para salir al mercado como Startup"
+      text="Buscamos estructurar, desarrollar y consolidar startups innovadoras que puedan ser sostenibles en el tiempo."
+    />
+    <CardProgram
+      title="BOOTCAMP"
+      subtitle="Dirigido a organizaciones que utilizan tecnología en sus procesos "
+      text="Tenemos un equipo disponible que te ayuda a resolver tus dudas y solicitar ayuda en cualquier momento de tu experiencia."
+    />
+  </ul>
+</section>
+
+<style>
+  .container-program {
+    background: rgb(255, 255, 255);
+    padding: 100px 0px;
+    margin: 0 auto;
+    width: 90%;
+  }
+  .cards-program {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .alter-h2 {
+    color: #7651ee;
+  }
+  /* .our-mision p{
+        color: #fff;
+        font-size: 1.2rem;
+        text-align: center;
+        padding-bottom: 10px;
+       
+    } */
+  /*responsive*/
+  @media (max-width: 640px) {
+    .container-program {
+      padding: 3rem 4rem;
+      text-align: left;
+      border: none;
+    }
+    .cards-program {
+      flex-direction: column;
+      gap: 2rem;
+      align-items: center;
+    }
+  }
+</style>
