@@ -1,105 +1,102 @@
 ---
 const title = "Sobre Warmi Ventures";
-const text = "We are a business incubator dedicated to providing support programs for  female entrepreneurs, who technically and commercially , validate their business ideas, connect with inversion,as well as rapidly growing their skills and value propositions for a successful market launch.";
+const text1 =
+  "Somos una incubadora de negocios dedicada a brindar programas de acompañamiento para emprendedoras, quienes validan técnica y comercialmente sus ideas de negocio, además crecer rápidamente sus habilidades y propuestas de valor para un lanzamiento exitoso en el mercado.";
+const text2 =
+  "Añadido a ello, preparar y formar equipos con emprendedores capacitados en el manejo de distintas herramientas y metodologías, que permita crear ideas innovadoras, mejorar modelos de negocios escalables y con potencial de levantar capital.";
 const ods5 = "/assets/ods5.png";
 const ods8 = "/assets/ods8.png";
 const ods9 = "/assets/ods9.png";
 const ods17 = "/assets/ods17.png";
 const women = "/assets/aboutUsWomen.png";
-
-
 ---
+
 <section class="aboutUs" id="aboutUs">
-    <div class="container-text">
-        <h2>Sobre<br><span>Warmi Ventures</span></h2>
-        <p>{text}</p>
-    </div>
-    <div class="container-image">
-        <img loading="lazy" src = {ods5} alt = "ods5">
-        <img loading="lazy" src = {ods8} alt = "ods8">
-        <img loading="lazy" src = {ods9} alt = "ods9">
-        <img loading="lazy" src = {ods17} alt = "ods17">
-        
-    </div>
-    <div class="women-image">
-        <img src={women} alt="women">
-    </div>
+  <div class="container-text">
+    <h2>Sobre<br /><span>Warmi Ventures</span></h2>
+    <p>{text1} <br /> <br /> {text2}</p>
+  </div>
+  <div class="container-image">
+    <img loading="lazy" src={ods5} alt="ods5" />
+    <img loading="lazy" src={ods8} alt="ods8" />
+    <img loading="lazy" src={ods9} alt="ods9" />
+    <img loading="lazy" src={ods17} alt="ods17" />
+  </div>
+  <div class="women-image">
+    <img src={women} alt="women" />
+  </div>
 </section>
 <style>
-    .aboutUs{
-        background-color: #fff;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 2rem;
-        padding-bottom: 0rem;
-        padding-top: 6rem;
-    }
-    .container-text{
-        width: 100%;
-        flex-direction: row;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        justify-content: center;
-        align-items: center;
-    }
-    .container-text h2{
-        color: #333;
-    }
-    .container-text span{
-        color: var(--purple-warmi);
-    }
-    .container-text p{
-        color: #333;
-        font-size: 1.2rem;
-        width: 80%;
-    }
-    .container-image{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-gap: 1rem;
-        justify-content: center;
-        align-items: center;
-        justify-items: center;
-        align-content: center;
-        margin: 5rem;
-        width: 50%;
-        
-    }
-    .container-image img{
-        width: 80%;
-        height: auto;
-    }
-    .women-image{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-       
-    }
-    .women-image img{
-        width: 75%;
-        height: auto;
-        
-    }
-    /* responsive */
-    @media (max-width: 640px) {
-        .container-text{
-            grid-template-columns: 1fr;
-            
-            justify-content: center;
-            align-items: center;
-        }
-        .container-text p{
-            width: 100%;
-        }
-        .container-image{
-            grid-template-columns: 1fr 1fr;
-            margin: 2rem;
-        }
-        .container-image img{
-            width: 90%;
-        }
-    }
+  .aboutUs {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    padding-bottom: 0rem;
+    padding-top: 10rem;
+  }
+  .container-text {
+    width: 100%;
+    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+  }
+  .container-text h2 {
+    color: #333;
+  }
+  .container-text span {
+    color: var(--purple-warmi);
+  }
+  .container-text p {
+    color: #333;
+    font-size: 1.1rem;
+    width: 80%;
+  }
+  .container-image {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    margin: 5rem;
+    width: 50%;
+  }
+  .container-image img {
+    width: 80%;
+    height: auto;
+  }
+  .women-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .women-image img {
+    width: 75%;
+    height: auto;
+  }
+  /* responsive */
+  @media (max-width: 640px) {
+    .container-text {
+      grid-template-columns: 1fr;
 
+      justify-content: center;
+      align-items: center;
+    }
+    .container-text p {
+      width: 100%;
+    }
+    .container-image {
+      grid-template-columns: 1fr 1fr;
+      margin: 2rem;
+    }
+    .container-image img {
+      width: 90%;
+    }
+  }
 </style>

@@ -30,7 +30,9 @@ const { title, content, link } = Astro.props as Props;
   </div>
   <div class="accordion-content">
     {content}
-    <p class="p-link"><a href={link} class="link">Saber más</a></p>
+    <p class="p-link">
+      <a href={link} class="link" target="_blank">Saber más</a>
+    </p>
   </div>
 </div>
 <style>
