@@ -1,98 +1,115 @@
 ---
-import Button from '../components/Button.astro'
-import Accordion from '../components/Accordion.astro'
+import Button from "../components/Button.astro";
+import Accordion from "../components/Accordion.astro";
 ---
 
 <section class="how-section" id="programs">
-    <div class="container">   
-        <div class="column-left">
-            <h2>¿Quieres <br> ayudarnos con <br>  <span class="alter-h2">nuestra causa?</span></h2>
-            <p class="description">A través de programas que visibilicen el impacto femenino de la región</p>
-            <Button textButton = 'Conoce más'/> 
-        </div>
-    
-        <div class="column-right">
-            <div class="video-container">
-                <article class="accordion">
-                    <section id="module-01">
-                        <Accordion title='Female Founder'
-                                   content='¿Deseas ser un aliado de nuestra comunidad ? Puedes inscribirte en este '
-                                   link = ""/>
-                                   
-                    </section>
-                    <section id="module-02">
-                        <Accordion title='Partner'
-                                   content='¿Deseas ser un aliado de nuestra comunidad ? Puedes inscribirte en este '
-                                   link = ""/>
-                    </section>
-                    <section id="module-03">
-                        <Accordion title='Empresas'
-                                   content='¿Deseas ser un aliado de nuestra comunidad ? Puedes inscribirte en este '
-                                   link = ""/>
-                    </section>
-                </article>
-            </div>
-        </div>
+  <div class="container">
+    <div class="column-left">
+      <h2>
+        ¿Quieres <br /> ayudarnos con <br />
+        <span class="alter-h2">nuestra causa?</span>
+      </h2>
+      <p class="description">
+        A través de programas que visibilicen el impacto femenino de la región
+      </p>
+      <Button textButton="Conoce más" />
     </div>
+
+    <div class="column-right">
+      <div class="video-container">
+        <article class="accordion">
+          <section id="module-01">
+            <Accordion
+              title="Female Founder"
+              content="Eres una fundadora mujer de una startup tecnológica y/o empresa con enfoque social en Perú o de habla hispana. "
+              link="https://tally.so/r/w51Keb"
+            />
+          </section>
+          <section id="module-02">
+            <Accordion
+              title="Partner/Aliado"
+              content="Eres una empresa tecnológica,  promueves la internacionalización de empresas, eres un financiador, venture capital, perteneces al sector gubernamental, etc."
+              link="https://tally.so/r/wzyG8q"
+            />
+          </section>
+          <section id="module-03">
+            <Accordion
+              title="Speaker Warmi"
+              content="Buscas compartir voluntariamente tus aprendizajes con nuestra comunidad y servir con nuestro propósito a través de charlas en eventos/webinars"
+              link="https://tally.so/r/wzyG8q"
+            />
+          </section>
+          <section id="module-04">
+            <Accordion
+              title="Empresas y ONGs"
+              content="Eres una organización que apoya al ecosistema emprendedor, aceleradoras, universidades, consultoras, incubadoras de negocios, líderes áreas de responsabilidad social y empresarial, sostenibilidad, donantes filantrópicos, asociaciones sin fines de lucro, etc. "
+              link="https://tally.so/r/meEXko"
+            />
+          </section>
+        </article>
+      </div>
+    </div>
+  </div>
 </section>
 
 <style>
+  .how-section {
+    background-color: #fff;
+    padding: 100px 100px;
+    margin: 0;
+    text-align: left;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 3rem;
+  }
+
+  .column-left {
+    width: 50%;
+    /* position: sticky; */
+    /* top: 100px; */
+    align-self: flex-start;
+  }
+
+  .column-right {
+    /* margin-top: 50px; */
+    width: auto;
+    flex: 2;
+  }
+
+  .how-section h2 {
+    color: #333333;
+    text-align: left;
+  }
+
+  .how-section p {
+    color: #575757;
+    font-size: 1rem;
+    padding-bottom: 10px;
+  }
+
+  .alter-h2 {
+    color: #c88efc;
+  }
+  /* responsive */
+  @media (max-width: 500px) {
     .how-section {
-        background-color: #fff;
-        padding: 100px 100px;
-        margin: 0;
-        text-align: left;
+      padding: 2rem 3rem;
+      text-align: left;
     }
-
     .container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: flex-start;
-        gap: 3rem;
+      flex-direction: column;
+      gap: 20px;
+      text-align: left;
     }
-
     .column-left {
-        width: 50%;
-        /* position: sticky; */
-        /* top: 100px; */
-        align-self: flex-start;
+      width: 100%;
+      text-align: left;
     }
-
-    .column-right {
-        /* margin-top: 50px; */
-        width: auto;
-        flex: 2;
-    }
-  
-    .how-section h2 {
-        color: #333333;
-        text-align: left;
-    }
-    
-    .how-section p {
-        color: #575757;
-        font-size: 1rem;
-        padding-bottom: 10px;
-    }
-
-    .alter-h2 {
-        color: #C88EFC;
-    }
-    /* responsive */
-    @media (max-width: 500px) {
-        .how-section {
-            padding: 2rem 3rem;
-            text-align: left;
-        }
-        .container {
-            flex-direction: column;
-            gap: 20px;
-            text-align: left;
-        }
-        .column-left {
-            width: 100%;
-            text-align: left;
-        }
-    }
+  }
 </style>

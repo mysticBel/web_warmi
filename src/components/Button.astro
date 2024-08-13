@@ -2,8 +2,9 @@
 interface Props {
   textButton: string;
 }
-const { textButton }= Astro.props;
+const { textButton } = Astro.props;
 ---
+
 <button class="button-warmi">{textButton}</button>
 <style>
   .button-warmi {
@@ -16,8 +17,12 @@ const { textButton }= Astro.props;
     text-align: center;
     text-decoration: none;
     color: #fff;
-    background: rgb(215,91,204);
-    background: linear-gradient(90deg, rgba(215,91,204,1) 0%, rgba(118,81,238,1) 100%);
+    background: rgb(215, 91, 204);
+    background: linear-gradient(
+      90deg,
+      rgba(215, 91, 204, 1) 0%,
+      rgba(118, 81, 238, 1) 100%
+    );
     border: 2px solid #3c3762;
     border-radius: 10px;
     box-shadow: 10px 10px 0px #3c3762;
@@ -26,8 +31,7 @@ const { textButton }= Astro.props;
   }
 
   .button-warmi:hover {
-  
-    border: 2px solid #3c3762 ;
+    border: 2px solid #3c3762;
     box-shadow: 5px 5px 0px #3c3762;
   }
 
@@ -39,9 +43,5 @@ const { textButton }= Astro.props;
     .button-warmi {
       width: 100%;
     }
-    
   }
-
-
-
 </style>
