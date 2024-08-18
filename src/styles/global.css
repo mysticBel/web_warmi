@@ -103,3 +103,19 @@ html{
     transform: translateY(4px);
   }
 
+  .p-link {
+    margin: 10px auto;
+  }
+
+  .link:hover {
+    color: #df22d5;
+    font-weight: 600;
+    transition:
+      color 0.4s ease,
+      font-weight 0.5s ease;
+  }
+  .link {
+    color: #9273df;
+    font-weight: 600;
+    text-decoration: underline;
+  }
