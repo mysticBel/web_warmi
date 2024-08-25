@@ -9,20 +9,29 @@ import CardProgram from "../components/CardProgram.astro";
       title="PRE-INCUBACIÓN"
       subtitle="Te ayudaremos a validar la problemática y lanzar tu idea de negocio "
       text="Buscamos brindar apoyo desde la idea de negocio hasta la validación del problema con la construcción de un Producto Mínimo Viable (MVP)."
-      link=""
     />
     <CardProgram
       title="INCUBACIÓN"
       subtitle="Te preparamos para salir al mercado como Startup"
       text="Buscamos estructurar, desarrollar y consolidar startups innovadoras que puedan ser sostenibles en el tiempo."
-      link=""
     />
-    <CardProgram
-      title="BOOTCAMP"
-      subtitle="Dirigido a organizaciones que utilizan tecnología en sus procesos "
-      text="Tenemos un equipo disponible que te ayuda a resolver tus dudas y solicitar ayuda en cualquier momento de tu experiencia."
-      link=""
-    />
+    <li class="link-card">
+      <div class="card-title">
+        <h1>
+          BOOTCAMP
+        </h1>
+      </div>
+      <div class="card-description">
+        <p class="card-subtitle">
+          Dirigido a organizaciones que utilizan tecnología en sus procesos
+        </p>
+        <p>
+          Tenemos un equipo disponible que te ayuda a resolver tus dudas y solicitar ayuda en cualquier momento de tu experiencia.<br>
+          <a rel="noopener noreferrer" target="_blank" class="link" href="https://tally.so/r/meEXko">Saber más</a>
+        </p>
+      </div>
+      <div></div>
+    </li>
   </ul>
 </section>
 
@@ -62,6 +71,79 @@ import CardProgram from "../components/CardProgram.astro";
       flex-direction: column;
       gap: 2rem;
       align-items: center;
+    }
+  }
+
+  .link:hover {
+    color: #df22d5;
+    font-weight: 600;
+    transition:
+      color 0.4s ease,
+      font-weight 0.5s ease;
+  }
+  .link {
+    color: #9273df;
+    font-weight: 600;
+    text-decoration: underline;
+  }
+
+
+  .link-card {
+    list-style: none;
+    /* display: flex; */
+    padding: 50px;
+    background-color: #e8e0ff;
+    gap: 1rem;
+    border-radius: 1rem;
+  }
+  .card-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    flex-basis: 70%;
+  }
+
+  div {
+    display: flex;
+    /* justify-content: center; */
+    width: 250px;
+  }
+  .card-image {
+    align-items: center;
+    flex-basis: 30%;
+  }
+  img {
+    width: 70px;
+    height: 65px;
+    margin: auto;
+  }
+  h1 {
+    font-size: 1.5rem;
+    color: #7651ee;
+    text-align: left;
+  }
+  p {
+    font-size: 0.9rem;
+    color: #4a3288;
+  }
+  .card-subtitle {
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1.7px solid #4d33a1;
+  }
+
+  /* responsive */
+
+  @media (max-width: 640px) {
+    .link-card {
+      flex-direction: column;
+      padding: 1.5rem;
+    }
+    .card-description {
+      flex-basis: 100%;
+    }
+    .card-image {
+      flex-basis: 100%;
     }
   }
 </style>
