@@ -119,3 +119,7 @@ html{
     font-weight: 600;
     text-decoration: underline;
   }
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: #FF5733; /* Cambia este color al que desees */
+  }
