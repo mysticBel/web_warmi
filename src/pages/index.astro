@@ -18,6 +18,7 @@ import Participants from "../sections/Participants.astro";
 import Sponsor from "../sections/Sponsor.astro";
 import Footer from "../sections/Footer.astro";
 import Programs from "../sections/Programs.astro";
+import Testimonials from "../sections/Testimonials.jsx";
 ---
 
 <Layout title="Warmi Ventures">
@@ -52,6 +53,7 @@ import Programs from "../sections/Programs.astro";
   <Why />
   <BannerFemale />
   <Participants />
+  <Testimonials client:load />
   <Sponsor />
   <Footer />
 </Layout>
