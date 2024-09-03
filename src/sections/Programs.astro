@@ -5,7 +5,7 @@ import CardProgram from "../components/CardProgram.astro";
 <section class="container-program">
   <h2>Nuestros<span class="alter-h2"> programas</span></h2>
   <ul class="cards-program">
-    <CardProgram
+    <!-- <CardProgram
       title="PRE-INCUBACIÓN"
       subtitle="Te ayudaremos a validar la problemática y lanzar tu idea de negocio "
       text="Buscamos brindar apoyo desde la idea de negocio hasta la validación del problema con la construcción de un Producto Mínimo Viable (MVP)."
@@ -14,20 +14,63 @@ import CardProgram from "../components/CardProgram.astro";
       title="INCUBACIÓN"
       subtitle="Te preparamos para salir al mercado como Startup"
       text="Buscamos estructurar, desarrollar y consolidar startups innovadoras que puedan ser sostenibles en el tiempo."
-    />
+    /> -->
     <li class="link-card">
       <div class="card-title">
-        <h1>
-          BOOTCAMP
-        </h1>
+        <h1>PRE-INCUBACIÓN</h1>
+      </div>
+      <div class="card-description">
+        <p class="card-subtitle">
+          Te ayudaremos a validar la problemática y lanzar tu idea de negocio
+        </p>
+        <p>
+          Buscamos brindar apoyo desde la idea de negocio hasta la validación
+          del problema con la construcción de un Producto Mínimo Viable (MVP).<br
+          />
+          <!-- <a rel="noopener noreferrer" target="_blank" class="link" href="https://tally.so/r/meEXko">Saber más</a> -->
+        </p>
+      </div>
+      <div></div>
+    </li>
+    <li class="link-card">
+      <div class="card-title">
+        <h1>INCUBACIÓN</h1>
+      </div>
+      <div class="card-description">
+        <p class="card-subtitle">
+          Te preparamos para salir al mercado como Startup
+        </p>
+        <p>
+          Buscamos estructurar, desarrollar y consolidar startups innovadoras
+          que puedan ser sostenibles en el tiempo.<br />
+          <!-- <a
+            rel="noopener noreferrer"
+            target="_blank"
+            class="link"
+            href="https://tally.so/r/meEXko">Saber más</a
+          > -->
+        </p>
+      </div>
+      <div></div>
+    </li>
+
+    <li class="link-card">
+      <div class="card-title">
+        <h1>BOOTCAMP</h1>
       </div>
       <div class="card-description">
         <p class="card-subtitle">
           Dirigido a organizaciones que utilizan tecnología en sus procesos
         </p>
         <p>
-          Tenemos un equipo disponible que te ayuda a resolver tus dudas y solicitar ayuda en cualquier momento de tu experiencia.<br>
-          <a rel="noopener noreferrer" target="_blank" class="link" href="https://tally.so/r/meEXko">Saber más</a>
+          Tenemos un equipo disponible que te ayuda a resolver tus dudas y
+          solicitar ayuda en cualquier momento de tu experiencia.<br />
+          <a
+            rel="noopener noreferrer"
+            target="_blank"
+            class="link"
+            href="https://tally.so/r/meEXko">Saber más</a
+          >
         </p>
       </div>
       <div></div>
@@ -48,18 +91,16 @@ import CardProgram from "../components/CardProgram.astro";
     justify-content: space-evenly;
     gap: 10px;
     flex-wrap: wrap;
+    margin: 50px auto;
+  }
+  h2 {
+    padding: 10px 0px;
   }
 
   .alter-h2 {
     color: #7651ee;
   }
-  /* .our-mision p{
-        color: #fff;
-        font-size: 1.2rem;
-        text-align: center;
-        padding-bottom: 10px;
-       
-    } */
+
   /*responsive*/
   @media (max-width: 640px) {
     .container-program {
@@ -87,7 +128,6 @@ import CardProgram from "../components/CardProgram.astro";
     text-decoration: underline;
   }
 
-
   .link-card {
     list-style: none;
     /* display: flex; */
@@ -95,6 +135,8 @@ import CardProgram from "../components/CardProgram.astro";
     background-color: #e8e0ff;
     gap: 1rem;
     border-radius: 1rem;
+    border: 1.5px dashed #7651ee;
+    /* border-style: ; */
   }
   .card-description {
     display: flex;
@@ -130,6 +172,9 @@ import CardProgram from "../components/CardProgram.astro";
     margin-bottom: 1rem;
     padding-bottom: 1rem;
     border-bottom: 1.7px solid #4d33a1;
+    color: #d782ff;
+    font-weight: 500;
+    font-style: italic;
   }
 
   /* responsive */
